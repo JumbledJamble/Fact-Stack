@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="{% static 'css/main.css' %}"> -->
+  <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <div class="dashboardContainer">
+      <header class="dashboardHeader">
+          <div class="user-info">
+              <span>allan</span>
+              <span>12 quizzes taken</span>
+          </div>
+          <button class="newQuizButton">+ New Quiz</button>
+      </header>
+
+      <section class="welcomeSection">
+          <h1>Welcome, Allan.</h1>
+      </section>
+
+      <section class="topicsSection">
+          <h2>Topics</h2>
+          <div class="topicsGrid" id="topicTable">
+              <div class="topic-card">
+                  <h3>History</h3>
+                  <p>20 questions</p>
+                  <div class="progressBarContainer">
+                      <div class="progressBar" style="width: 85%;"></div>
+                  </div>
+                  <span>85%</span>
+              </div>
+              <div class="topicCard">
+                  <h3>Geography</h3>
+                  <p>15 questions</p>
+                  <div class="progressBarContainer">
+                      <div class="progressBar" style="width: 60%;"></div>
+                  </div>
+                  <span>60%</span>
+              </div>
+              <div class="topicCard">
+                  <h3>Science</h3>
+                  <p>12 questions</p>
+                  <div class="progressBarContainer">
+                      <div class="progressBar" style="width: 75%;"></div>
+                  </div>
+                  <span>75%</span>
+              </div>
+          </div>
+      </section>
+
+      <section class="recentQuizzesSection">
+          <h2>Recent Quizzes</h2>
+          <div class="quizItem">
+              <div class="quizTags">
+                  <span class="tag">History</span>
+                  <span class="tag">Science</span>
+                  <span class="tag">Geography</span>
+              </div>
+              <div class="quizScore">
+                  <div class="scoreCircle">
+                      <span>92%</span>
+                  </div>
+              </div>
+          </div>
+          <div class="quizItem">
+              <div class="quizTags">
+                  <span class="tag">Geography</span>
+                  <span class="tag">History</span>
+              </div>
+              <div class="quizScore">
+                  <div class="scoreCircle">
+                      <span>76%</span>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</body>
+
+<script src="{% static 'js/landing.js' %}"></script></script>
+</html>
